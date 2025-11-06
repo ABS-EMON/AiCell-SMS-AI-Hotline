@@ -1,0 +1,33 @@
+Main Concept
+
+AiCell is an AI-powered SMS hotline system designed to make artificial intelligence accessible for everyone — even without internet connectivity or smartphones. The system enables users to send a simple SMS message to the hotline number +8801518979969 and receive either a predefined instant reply or a smart AI-generated response directly on their mobile phone.
+
+The backend operates through an ESP32 microcontroller connected to a GSM module and a local laptop server running Python Flask. When a user sends an SMS through the mobile network, the GSM module receives it and forwards the message, along with the sender’s phone number, to the local server via Wi-Fi.
+
+The server first checks whether the SMS contains a command or keyword:
+
+#HELP → Sends a list of available commands.
+
+#INFO → Provides information about the AiCell service.
+
+#CONNECT / #MODE HEALTH | AGRI | EDU → Switches the user to AI mode or a specific assistant type (HealthCare, AgriCell, or EduCell).
+
+Once in a mode, AiCell uses a local knowledge base (FAQ) to instantly answer common or domain-specific questions in Bangla or English, making it fast and cost-effective. If the user’s message doesn’t match any predefined entries, it automatically connects to the OpenAI API to generate an intelligent reply — all within 30 seconds.
+
+This hybrid architecture (local + AI) ensures quick response, low cost, and high reliability, while the use of Bangla SMS support enables inclusive access for rural users. AiCell can provide assistance in healthcare, agriculture, and education, making it a powerful tool for digital inclusion and AI accessibility in areas without internet connectivity.
+
+Key Highlights:
+
+Works with any basic mobile phone using SMS only.
+
+Operates via ESP32 + GSM module + Laptop Server.
+
+Supports commands, predefined FAQs, and AI fallback.
+
+Offers Bangla and English language communication.
+
+Includes focused modes: HealthCare, AgriCell, and EduCell.
+
+Provides fast replies (within 30 seconds) through GSM network.
+
+Cost-effective, offline-ready, and socially impactful for rural and disaster-prone areas.
