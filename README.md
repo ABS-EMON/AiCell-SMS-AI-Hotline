@@ -65,11 +65,11 @@ Users can send SMS messages to a hotline number and receive **smart AI or predef
 - Designed for **rural, offline, or disaster-prone areas**.
 
 ---
-<img width="1024" height="1024" alt="flowchart" src="https://github.com/user-attachments/assets/84af0d9c-f614-4ccb-bc43-062eb39fa809" />
+
 
 ## ⚙️ System Architecture
 
-![System Architecture](docs/architecture_diagram.png)
+<img width="1024" height="1024" alt="flowchart" src="https://github.com/user-attachments/assets/84af0d9c-f614-4ccb-bc43-062eb39fa809" />
 
 **Flow:**  
 User → GSM Module (SIM800C) → ESP32 → Laptop (Flask Server + AI) → ESP32 → GSM → User  
