@@ -36,6 +36,7 @@ AiCell-SMS-AI-Hotline/
 ```
 
 ---
+<img width="1024" height="1024" alt="architecture_diagram" src="https://github.com/user-attachments/assets/f005ccd2-ab57-44d7-8256-f3b349569d6c" />
 
 ## 📝 **README.md Template (Complete)**
 
@@ -48,7 +49,6 @@ AiCell-SMS-AI-Hotline/
 Users can send SMS messages to a hotline number and receive **smart AI or predefined replies** directly on their mobile phones.
 
 ---
-<img width="1024" height="1024" alt="architecture_diagram" src="https://github.com/user-attachments/assets/f005ccd2-ab57-44d7-8256-f3b349569d6c" />
 
 ## 🧩 Features
 - Works with **any basic mobile phone** using **SMS only**.
@@ -69,7 +69,8 @@ Users can send SMS messages to a hotline number and receive **smart AI or predef
 
 ## ⚙️ System Architecture
 
-<img width="1024" height="1024" alt="flowchart" src="https://github.com/user-attachments/assets/84af0d9c-f614-4ccb-bc43-062eb39fa809" />
+
+
 
 **Flow:**  
 User → GSM Module (SIM800C) → ESP32 → Laptop (Flask Server + AI) → ESP32 → GSM → User  
@@ -87,8 +88,6 @@ User → GSM Module (SIM800C) → ESP32 → Laptop (Flask Server + AI) → ESP32
 | Power Source | 5V regulated power for ESP32 and GSM module |
 
 ### 🔌 Circuit Diagram
-<img width="1807" height="949" alt="circuit_diagram" src="https://github.com/user-attachments/assets/b387d19d-31da-43d4-8df8-e70666c7f74a" />
-
 
 **Pin Connection Example (ESP32 + SIM800C)**  
 | ESP32 Pin | SIM800C Pin |
@@ -97,7 +96,7 @@ User → GSM Module (SIM800C) → ESP32 → Laptop (Flask Server + AI) → ESP32
 | TX (GPIO17) | RX |
 | GND | GND |
 | 5V | VCC (via level shifter if needed) |
-![GSM_SIM800C](https://github.com/user-attachments/assets/5fc399a2-ab7e-4cfc-b176-9ef51ce6932e)
+
 
 ---
 
@@ -109,6 +108,7 @@ cd server
 pip install -r requirements.txt
 python aicell_server.py
 ````
+<img width="1024" height="1024" alt="flowchart" src="https://github.com/user-attachments/assets/ddbda627-bd50-4d63-9006-221f0ba490eb" />
 
 ### **2️⃣ ESP32 Setup**
 ![esp32](https://github.com/user-attachments/assets/62197fb5-e731-45a7-95f6-149ee142bc6e)
