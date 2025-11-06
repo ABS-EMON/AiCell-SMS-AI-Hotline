@@ -209,10 +209,7 @@ Add arrows showing data flow:
 **SMS → GSM → ESP32 → Server → AI → GSM → User**
 
 Save it as:
-```
-
 <img width="1807" height="949" alt="circuit_diagram" src="https://github.com/user-attachments/assets/15aac947-e83b-4785-bb9a-6cb922962843" />
-
 
 ---
 
